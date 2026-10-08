@@ -3,6 +3,8 @@ This is a simple routing application using OpenStreetMap data.
 Currently it only uses dijkstras algorithm for routing, but it is planned to further
 extend the capabilities with modern routing algorithms, e.g. CHs, CCHs or PHAST.
 
+![image](./jbmaps.png)
+
 ## Running jbmaps
 The project is compiled using `cmake`. It requires a working C++20 setup and a working CMake installation. It also requires `python` and
 `turtle` for the visualization. To convert the result to a pdf `epstopdf` is required.
