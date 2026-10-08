@@ -10,6 +10,7 @@ The necessary commands to run and build the project are found in the `justfile`.
 To compile the interactive routing application run:
 
 ```sh
+just config release
 just build-release interactive_routing
 ```
 Then run it with:
