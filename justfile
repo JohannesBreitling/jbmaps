@@ -14,6 +14,9 @@ run-debug target +params='':
 build-release target='': # Build the target in release mode
     cmake --build ./build/release --target {{target}}
 
+[group('release')]
+run-release target +params='':
+    ./build/release/{{target}} {{params}}
 
 viz-sources:
     python3 ./scripts/visualize_vertices.py ./output/karlsruhe/edge_coords_start.txt ./output/karlsruhe/edge_coords_end.txt ./output/random_sources.txt
